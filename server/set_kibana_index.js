@@ -1,5 +1,5 @@
 export default function (server, request, remoteUser, suffix) {
-  const defaultIndex = server.config().get('own_home.local.default_kibana_index');
+  const defaultIndex = server.config().get('own_home.default_kibana_index');
   const prefix = server.config().get('kibana.index');
   let idx = [prefix];
   if (suffix) {
